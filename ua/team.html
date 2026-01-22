@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="icon.png">
+    <title>Квант — Команда</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo-box">
+            <img src="logo.png" alt="Квант" class="logo-img">
+            <span class="logo-name">КВАНТ</span>
+        </a>
+        <div class="menu">
+            <a href="index.html">Головна</a>
+            <a href="products.html">Продукти</a>
+            <a href="team.html" class="active">Команда</a>
+            <a href="feedback.html">Відгуки</a>
+        </div>
+        <div class="lang-switch">
+            <span onclick="switchLang('ua')" class="lang-link">UA</span>
+            <span onclick="switchLang('en')" class="lang-link">EN</span>
+            <span onclick="switchLang('ru')" class="lang-link">RU</span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Наша команда</h1>
+        <p>Для реалізації проєкту такого масштабу ми залучаємо найкращих фахівців:</p>
+        
+        <div class="team-grid">
+            <div class="member-card">
+                <div>
+                    <div class="role">Розробка</div>
+                    <strong>Python розробник</strong>
+                    <p>Відповідає за логіку ШІ та серверну стабільність.</p>
+                </div>
+                <button class="join-btn" onclick="document.getElementById('apply-now').scrollIntoView({behavior: 'smooth'})">Вступити</button>
+            </div>
+            
+            <div class="member-card">
+                <div>
+                    <div class="role">Контроль якості</div>
+                    <strong>QA Тестировщик</strong>
+                    <p>Перевірка безпеки та пошук помилок у коді.</p>
+                </div>
+                <button class="join-btn" onclick="document.getElementById('apply-now').scrollIntoView({behavior: 'smooth'})">Вступити</button>
+            </div>
+
+            <div class="member-card">
+                <div>
+                    <div class="role">Дизайн</div>
+                    <strong>UI/UX Дизайнер</strong>
+                    <p>Створення зручних інтерфейсів для людей.</p>
+                </div>
+                <button class="join-btn" onclick="document.getElementById('apply-now').scrollIntoView({behavior: 'smooth'})">Вступити</button>
+            </div>
+
+            <div class="member-card">
+                <div>
+                    <div class="role">Залізо</div>
+                    <strong>Інженер-робототехнік</strong>
+                    <p>Проектування рухомих вузлів наших роботів.</p>
+                </div>
+                <button class="join-btn" onclick="document.getElementById('apply-now').scrollIntoView({behavior: 'smooth'})">Вступити</button>
+            </div>
+
+            <div class="member-card">
+                <div>
+                    <div class="role">Просування</div>
+                    <strong>Маркетолог-аналітик</strong>
+                    <p>Стратегія захоплення ринку та робота з рекламою.</p>
+                </div>
+                <button class="join-btn" onclick="document.getElementById('apply-now').scrollIntoView({behavior: 'smooth'})">Вступити</button>
+            </div>
+
+            <div class="member-card">
+                <div>
+                    <div class="role">Право</div>
+                    <strong>Юрист</strong>
+                    <p>Оформлення патентів на наші ШІ-винаходи.</p>
+                </div>
+                <button class="join-btn" onclick="document.getElementById('apply-now').scrollIntoView({behavior: 'smooth'})">Вступити</button>
+            </div>
+        </div>
+
+        <div class="highlight-box">
+            <h3>Ефективність роботи</h3>
+            <p>Завдяки глибокому впровадженню <strong>Штучного Інтелекту</strong> в наші робочі процеси, кожен співробітник компанії виконує завдання, на які зазвичай потрібно 2-3 людини.</p>
+        </div>
+
+        <div class="google-section" id="apply-now">
+            <h2>Станьте частиною історії</h2>
+            <p>На даний момент ми не ведемо офіційний найм у штат, але ми <strong>активно запрошуємо всіх охочих</strong> допомогти проєкту на ранніх етапах. Якщо ви горите технологіями так само як і ми — давайте створювати «Квант» разом!</p>
+            <a href="https://forms.gle/wZKxWpGmBhWHgXXi8" target="_blank" class="google-link">Приєднатися до проєкту</a>
+        </div>
+    </div>
+    <footer>&copy; 2026 Компанія «Квант» | Інновації в кожному коді</footer>
+    <script src="../script.js"></script>
+</body>
+</html>
