@@ -247,4 +247,80 @@ footer {
 
 .lang-link:hover {
     color: var(--main-green);
+
+}
+
+/*============================================================================================================================*/
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    /* Навигация: делаем колонкой */
+    nav {
+        flex-direction: column;
+        padding: 15px 5%;
+    }
+
+    .menu {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+
+    .lang-switch {
+        margin-left: 0;
+        margin-top: 10px;
+        border-left: none;
+        border-top: 1px solid #444;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+    /* Герой-секция: уменьшаем текст */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Карточки: убираем горизонтальный flex, делаем в столбик */
+    .product-card, .member-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* План развития (Roadmap): делаем вертикальным */
+    .roadmap {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .roadmap::before {
+        width: 4px;
+        height: 100%;
+        left: 50%;
+        margin-left: -2px;
+        top: 0;
+    }
+
+    .roadmap-step {
+        width: 100%;
+    }
+
+    /* Контейнеры и отступы */
+    .container {
+        padding: 0 15px;
+    }
+
+    .manifesto {
+        padding: 30px 20px;
+    }
 }
